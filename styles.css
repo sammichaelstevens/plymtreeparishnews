@@ -1,0 +1,71 @@
+/* Basic reset for consistent spacing */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make links look like buttons */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin: 0.4rem 0;
+  background-color: #2a6f97;      /* A calm, trustworthy blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state */
+.button:hover {
+  background-color: #1f5a7a;
+  transform: translateY(-2px);
+}
+
+/* Keyboard focus state (important for accessibility) */
+.button:focus {
+  outline: 3px solid #ffbf47;     /* GOV.UK-style focus ring */
+  outline-offset: 3px;
+}
+
+/* Optional: make buttons full-width on small screens */
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Optional: tidy up nav */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a6f97;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Basic layout spacing */
+main, header, footer {
+  padding: 1rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-top: 2rem;
+}
